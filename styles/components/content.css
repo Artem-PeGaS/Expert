@@ -1,0 +1,6 @@
+.content {
+	&__section {
+		padding-bottom: 2.25rem;
+		padding-top: 2.25rem;
+	}
+}

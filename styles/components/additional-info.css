@@ -1,0 +1,42 @@
+.additional-info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	flex-wrap: wrap;
+	font-family: 'europe';
+
+	@media (--tablet-portrait-up) {
+		justify-content: center;
+	}
+
+	li {
+		display: block;
+		text-align: center;
+		width: 260px;
+		margin-bottom: 1.75rem;
+	}
+
+	&__circle {
+		background-image: url('/images/circle.png');
+		height: 112px;
+		width: 112px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__title {
+		color: var(--red);
+		text-transform: uppercase;
+		font-size: var(--fz-2);
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__descr {
+		color: var(--grey);
+		line-height: 1.25;
+	}
+}

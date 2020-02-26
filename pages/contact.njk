@@ -1,0 +1,74 @@
+{% extends "./layout.njk" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="slider-main slider-main_no-top swiper-container">
+    <div class="swiper-wrapper slider-main__wrapper">
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/slider.png" alt="">
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/slider.png" alt="">
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/slider.png" alt=""> 
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="breadcrumbs">
+    <ul class="breadcrumbs__wrapper wrapper">
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная<span class="breadcrumbs__separator">/</span></a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Каталог<span class="breadcrumbs__separator">/</span></a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Honda<span class="breadcrumbs__separator">/</span></a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link breadcrumbs__link_current">Accord</a>
+        </li>
+    </ul>
+  </div>
+
+    <div class="content__section">
+        <div class="title title_bold wrapper">КОНТАКТЫ</div>
+    </div>
+
+    <div class="contact-map contact-map_contact">
+        <div class="contact-map__info wrapper">
+            <div class="contact-map__info-content">
+                <div class="contact-map__info-content-title">
+                    Мы оказываем весь спектр услуг по продаже автомобиле
+                </div>
+
+                <div class="contact-map__address">
+                    <svg class="contact-map__address-icon"><use href="./styles/icons/icons.svg#home"/></svg>
+                    г. Самара, Московское шоссе, 270
+                </div>
+                <div class="contact-map__phone">
+                    <svg class="contact-map__phone-icon"><use href="./styles/icons/icons.svg#phone-call"/></svg>
+                    <a class="contact-map__phone-link link" href="tel:+78462295548">+7 (846) 229-55-48</a>
+                </div>
+
+                <div class="contact-map__time">
+                    <svg class="contact-map__time-icon"><use href="./styles/icons/icons.svg#clock"/></svg>
+                    Пн.-Вс. 8:00-20:00
+                </div>
+
+                <div class="contact-map__soc-net">
+                    <a href="#"><svg class="contact-map__soc-net-icon"><use href="./styles/icons/icons.svg#vk"/></svg></a>
+                    <a href="#"><svg class="contact-map__soc-net-icon"><use href="./styles/icons/icons.svg#instagram"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+    </div>
+
+{% endblock %}

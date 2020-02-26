@@ -1,0 +1,28 @@
+.additional-charact {
+	background-color: var(--grey-light);
+	box-shadow: inset 3px 13px 13px -9px var(--grey);
+	padding-top: 2.25rem;
+	padding-bottom: 2.25rem;
+	margin-bottom: 1.5rem;
+	font-family: 'europe';
+
+	&__list {
+		margin-top: 2.25rem;
+		column-count: 2;
+
+		@media (--tablet-portrait-up) {
+			column-count: 1;
+			width: 80%;
+		}
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+		list-style-type: circle;
+		color: var(--red);
+
+		span {
+			color: black;
+		}
+	}
+}

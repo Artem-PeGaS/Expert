@@ -1,0 +1,41 @@
+.links {
+	background-color: var(--grey-light);
+	box-shadow: inset 3px 13px 13px -9px var(--grey);
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+
+	@media (--tablet-portrait-up) {
+		margin-bottom: 1.5rem;
+	}
+
+	&__wrap {
+		column-count: 5;
+		line-height: 2;
+
+		@media (--tablet-landscape-up) {
+			column-count: 3;
+		}
+
+		@media (--tablet-portrait-up) {
+			column-count: 2;
+		}
+	}
+
+	&__item {
+		display: block;
+	}
+
+	&__link {
+		color: black;
+		@mixin ul-solid transparent;
+
+		&:hover {
+			@mixin ul-solid var(--grey);
+		}
+	}
+
+	&__color {
+		color: var(--red);
+		margin-left: 0.5rem;
+	}
+}

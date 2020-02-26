@@ -1,0 +1,42 @@
+.breadcrumbs {
+	border-bottom: 1px solid var(--grey-light);
+
+	&__wrapper {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		flex-wrap: wrap;
+		line-height: 1.25rem;
+		height: 70px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+		color: #eab000;
+		align-items: center;
+	}
+
+	&__link {
+		color: var(--red);
+		text-decoration: none;
+		transition-duration: 200ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+		font-style: italic;
+
+		&_current {
+			color: black;
+		}
+
+		&:hover {
+			color: black;
+		}
+	}
+
+	&__separator {
+		margin-right: 0.25rem;
+		margin-left: 0.25rem;
+		color: var(--red);
+	}
+}

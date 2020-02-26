@@ -1,0 +1,37 @@
+.filter {
+	margin-top: 2.5rem;
+	padding-bottom: 2rem;
+
+	&__top {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-gap: 1.5rem;
+		border-bottom: 1px var(--grey-light) solid;
+		padding-bottom: 1.75rem;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 1.75rem;
+
+		@media (--tablet-portrait-up) {
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+
+	&__button {
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		@media (--tablet-landscape-up) {
+			margin-bottom: 1rem;
+		}
+
+		@media (--tablet-portrait-up) {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+@font-face {
+	font-family: 'europe';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/europe-normal.woff2') format('woff2'), url('./fonts/europe-normal.woff') format('woff');
+}

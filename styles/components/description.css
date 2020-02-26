@@ -1,0 +1,30 @@
+.description {
+	position: relative;
+	line-height: 1.25;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+
+	&__txt {
+		&:not(:first-child) {
+			margin-top: 1.5rem;
+		}
+	}
+
+	&__back {
+		position: absolute;
+
+		&_1 {
+			left: 0;
+			top: 0;
+		}
+
+		&_2 {
+			right: 0;
+			bottom: 0;
+		}
+
+		@media (--tablet-portrait-up) {
+			display: none;
+		}
+	}
+}

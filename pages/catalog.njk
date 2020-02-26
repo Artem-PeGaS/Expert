@@ -1,0 +1,587 @@
+{% extends "./layout.njk" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+  <div class="slider-main slider-main_no-top swiper-container">
+    <div class="swiper-wrapper slider-main__wrapper">
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/slider.png" alt="">
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/slider.png" alt="">
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/slider.png" alt=""> 
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+    <form action="" class="filter wrapper">
+        <div class="filter__top">
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Тип транспорта</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Марка</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Модель</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Тип кузова</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Год выпуска</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Пробег тыс. км.</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Коробка передач</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Цена руб.</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Привод</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Тип двигателя</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+        </div>
+        <div class="filter__bottom">
+        <div class="filter__bottom-left">
+            <button class="button button_black filter__button">Весь каталог</button>
+            <button class="button button_black filter__button">Оцените моё авто!</button>
+        </div>
+        <div class="filter__bottom-right">
+            <button class="button button_revert filter__button">Сбросить фильтр</button>
+            <button class="button filter__button">НАЙТИ</button>
+        </div>
+        </div>
+    </form>
+
+    <div class="links">
+        <ul class="links__wrap wrapper">
+            <li class="links__item"><a class="links__link link" href="#">Audi   <span class="links__color"> 60</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BAW    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BMW   <span class="links__color"> 87</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Brilliance    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Cadillac    <span class="links__color"> 5</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Changan    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chery    <span class="links__color"> 29</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chevrolet    <span class="links__color"> 171</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chrysler    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Fiat   <span class="links__color"> 7</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Ford   <span class="links__color"> 133</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Geely   <span class="links__color"> 21</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Great Wall   <span class="links__color"> 17</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Haima   <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Honda   <span class="links__color"> 16</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Hyundai   <span class="links__color"> 156</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Infiniti   <span class="links__color"> 33</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Jaguar   <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Audi   <span class="links__color"> 60</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BAW    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BMW   <span class="links__color"> 87</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Brilliance    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Cadillac    <span class="links__color"> 5</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Changan    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chery    <span class="links__color"> 29</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chevrolet    <span class="links__color"> 171</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chrysler    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Audi   <span class="links__color"> 60</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BAW    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BMW   <span class="links__color"> 87</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Brilliance    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Cadillac    <span class="links__color"> 5</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Changan    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chery    <span class="links__color"> 29</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chevrolet    <span class="links__color"> 171</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chrysler    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Audi   <span class="links__color"> 60</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BAW    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">BMW   <span class="links__color"> 87</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Brilliance    <span class="links__color"> 2</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Cadillac    <span class="links__color"> 5</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Changan    <span class="links__color"> 1</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chery    <span class="links__color"> 29</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chevrolet    <span class="links__color"> 171</span></a></li>
+            <li class="links__item"><a class="links__link link" href="#">Chrysler    <span class="links__color"> 2</span></a></li>
+        </ul>
+    </div>
+
+    <div class="slider-main slider-main_no-top swiper-container">
+        <div class="swiper-wrapper slider-main__wrapper">
+            <div class="swiper-slide slider-main__item">
+              <img class="slider-main__img" src="/images/ban_1.png" alt="">
+              <div class="wrapper slider-main__wrap">
+                <div class="slider-main__content">
+                  <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+                  <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+                  <button class="slider-main__button button">В КАТАЛОГ >></button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="swiper-slide slider-main__item">
+              <img class="slider-main__img" src="/images/ban_2.png" alt="">
+              <div class="wrapper slider-main__wrap">
+                <div class="slider-main__content">
+                  <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+                  <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+                  <button class="slider-main__button button">В КАТАЛОГ >></button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="swiper-slide slider-main__item">
+              <img class="slider-main__img" src="/images/ban_3.png" alt="">
+              <div class="wrapper slider-main__wrap">
+                <div class="slider-main__content">
+                  <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+                  <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+                  <button class="slider-main__button button">В КАТАЛОГ >></button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="title title_bold wrapper">Каталог</div>
+    <div class="interesting">
+      <div class="wrapper">
+
+        <form action="" class="interesting__sort">
+            <div class="select">
+                <select name="" id="" class="select__elem filter__select">
+                    <option value="" checked>Сортировать</option>
+                    <option value="">test</option>
+                </select>
+                <svg class="select__icon"><use href="./styles/icons/icons.svg#down-arrow" /></svg>
+            </div>
+            <svg class="interesting__sort-btn interesting__sort-btn_active interesting__sort-btn_grid "><use href="./styles/icons/icons.svg#grid" /></svg>
+            <svg class="interesting__sort-btn interesting__sort-btn_list "><use href="./styles/icons/icons.svg#list" /></svg>
+        </form>
+
+        <div class="interesting__elements">
+          <div class="interesting__elem">
+            <img src="./images/int.png" alt="" class="interesting__img">
+            <div class="interesting__wrap-line">
+                <div class="interesting__title">
+                    <div class="interesting__name">BMW 5 серия</div>
+                    <div class="interesting__price">1 365 000 руб.</div>
+                </div>
+                <div class="interesting__end">
+                    <div class="interesting__specifications">
+                        <div class="interesting__specifications-min">
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                                2013
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                                76 000 км
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                                автомат
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                                2 л
+                            </div>
+                        </div>
+                        <div class="interesting__specifications-big">
+                            <div class="auto__info-specifications">
+                                <div class="auto__info-specification">
+                                  <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="interesting__buttons">
+                        <button class="button button_black interesting__button">Подробнее >></button>
+                        <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+                        <button class="button button_grey interesting__button">КРЕДИТ</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="interesting__elem">
+            <img src="./images/int.png" alt="" class="interesting__img">
+            <div class="interesting__wrap-line">
+                <div class="interesting__title">
+                    <div class="interesting__name">BMW 5 серия</div>
+                    <div class="interesting__price">1 365 000 руб.</div>
+                </div>
+                <div class="interesting__end">
+                    <div class="interesting__specifications">
+                        <div class="interesting__specifications-min">
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                                2013
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                                76 000 км
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                                автомат
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                                2 л
+                            </div>
+                        </div>
+                        <div class="interesting__specifications-big">
+                            <div class="auto__info-specifications">
+                                <div class="auto__info-specification">
+                                  <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="interesting__buttons">
+                        <button class="button button_black interesting__button">Подробнее >></button>
+                        <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+                        <button class="button button_grey interesting__button">КРЕДИТ</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="interesting__elem">
+            <img src="./images/int.png" alt="" class="interesting__img">
+            <div class="interesting__wrap-line">
+                <div class="interesting__title">
+                    <div class="interesting__name">BMW 5 серия</div>
+                    <div class="interesting__price">1 365 000 руб.</div>
+                </div>
+                <div class="interesting__end">
+                    <div class="interesting__specifications">
+                        <div class="interesting__specifications-min">
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                                2013
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                                76 000 км
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                                автомат
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                                2 л
+                            </div>
+                        </div>
+                        <div class="interesting__specifications-big">
+                            <div class="auto__info-specifications">
+                                <div class="auto__info-specification">
+                                  <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="interesting__buttons">
+                        <button class="button button_black interesting__button">Подробнее >></button>
+                        <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+                        <button class="button button_grey interesting__button">КРЕДИТ</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="interesting__elem">
+            <img src="./images/int.png" alt="" class="interesting__img">
+            <div class="interesting__wrap-line">
+                <div class="interesting__title">
+                    <div class="interesting__name">BMW 5 серия</div>
+                    <div class="interesting__price">1 365 000 руб.</div>
+                </div>
+                <div class="interesting__end">
+                    <div class="interesting__specifications">
+                        <div class="interesting__specifications-min">
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                                2013
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                                76 000 км
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                                автомат
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                                2 л
+                            </div>
+                        </div>
+                        <div class="interesting__specifications-big">
+                            <div class="auto__info-specifications">
+                                <div class="auto__info-specification">
+                                  <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="interesting__buttons">
+                        <button class="button button_black interesting__button">Подробнее >></button>
+                        <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+                        <button class="button button_grey interesting__button">КРЕДИТ</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="interesting__elem">
+            <img src="./images/int.png" alt="" class="interesting__img">
+            <div class="interesting__wrap-line">
+                <div class="interesting__title">
+                    <div class="interesting__name">BMW 5 серия</div>
+                    <div class="interesting__price">1 365 000 руб.</div>
+                </div>
+                <div class="interesting__end">
+                    <div class="interesting__specifications">
+                        <div class="interesting__specifications-min">
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                                2013
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                                76 000 км
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                                автомат
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                                2 л
+                            </div>
+                        </div>
+                        <div class="interesting__specifications-big">
+                            <div class="auto__info-specifications">
+                                <div class="auto__info-specification">
+                                  <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="interesting__buttons">
+                        <button class="button button_black interesting__button">Подробнее >></button>
+                        <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+                        <button class="button button_grey interesting__button">КРЕДИТ</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="interesting__elem">
+            <img src="./images/int.png" alt="" class="interesting__img">
+            <div class="interesting__wrap-line">
+                <div class="interesting__title">
+                    <div class="interesting__name">BMW 5 серия</div>
+                    <div class="interesting__price">1 365 000 руб.</div>
+                </div>
+                <div class="interesting__end">
+                    <div class="interesting__specifications">
+                        <div class="interesting__specifications-min">
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                                2013
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                                76 000 км
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                                автомат
+                            </div>
+                            <div class="interesting__specifications-min-elem">
+                                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                                2 л
+                            </div>
+                        </div>
+                        <div class="interesting__specifications-big">
+                            <div class="auto__info-specifications">
+                                <div class="auto__info-specification">
+                                  <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+                                </div>
+                                <div class="auto__info-specification">
+                                  <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="interesting__buttons">
+                        <button class="button button_black interesting__button">Подробнее >></button>
+                        <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+                        <button class="button button_grey interesting__button">КРЕДИТ</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="interesting__add-more">
+          <span class="interesting__add-more-btn">Показать ещё...</span>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

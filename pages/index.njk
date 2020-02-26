@@ -1,0 +1,544 @@
+{% extends "./layout.njk" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__wrapper wrapper">
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная<span class="breadcrumbs__separator">/</span></a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Каталог<span class="breadcrumbs__separator">/</span></a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Honda<span class="breadcrumbs__separator">/</span></a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link breadcrumbs__link_current">Accord</a>
+        </li>
+    </ul>
+  </div>
+
+  
+  <div class="slider-main swiper-container">
+    <div class="swiper-wrapper slider-main__wrapper">
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/ban_1.png" alt="">
+          <div class="wrapper slider-main__wrap">
+            <div class="slider-main__content">
+              <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+              <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+              <button class="slider-main__button button">В КАТАЛОГ >></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/ban_2.png" alt="">
+          <div class="wrapper slider-main__wrap">
+            <div class="slider-main__content">
+              <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+              <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+              <button class="slider-main__button button">В КАТАЛОГ >></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/ban_3.png" alt="">
+          <div class="wrapper slider-main__wrap">
+            <div class="slider-main__content">
+              <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+              <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+              <button class="slider-main__button button">В КАТАЛОГ >></button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="title title_bold wrapper">HONDA ACCORD</div>
+
+  <div class="auto wrapper">
+    <div class="auto__left">
+      <div class="gallery-product">      
+          <div class="swiper-container gallery-product__main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery-product__main-item"><img src="/images/main-prod.png" alt=""></div>
+              <div class="swiper-slide gallery-product__main-item"><img src="/images/main-prod.png" alt=""></div>
+              <div class="swiper-slide gallery-product__main-item"><img src="/images/main-prod.png" alt=""></div>
+              <div class="swiper-slide gallery-product__main-item"><img src="/images/main-prod.png" alt=""></div>
+              <div class="swiper-slide gallery-product__main-item"><img src="/images/main-prod.png" alt=""></div>
+              <div class="swiper-slide gallery-product__main-item"><img src="/images/main-prod.png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="gallery-product__previews">
+            <div class="gallery-product__preview gallery-product__preview_active">
+              <img src="/images/main-prod.png" alt="">
+            </div>
+            <div class="gallery-product__preview">
+              <img src="/images/main-prod.png" alt="">
+            </div>
+            <div class="gallery-product__preview">
+              <img src="/images/main-prod.png" alt="">
+            </div>
+            <div class="gallery-product__preview">
+              <img src="/images/main-prod.png" alt="">
+            </div>
+            <div class="gallery-product__preview">
+              <img src="/images/main-prod.png" alt="">
+            </div>
+            <div class="gallery-product__preview">
+              <img src="/images/main-prod.png" alt="">
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="auto__right">
+      <div class="auto__info">
+        <div class="auto__info-price">
+          Цена <div class="auto__info-current-price">619 000 руб.</div>
+        </div>
+        <div class="auto__info-specifications">
+          <div class="auto__info-specification">
+            <div>Год выпуска</div> <div class="auto__grow"></div> <div>2015</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Пробе г</div> <div class="auto__grow"></div> <div>63 067 км</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Кузов</div> <div class="auto__grow"></div> <div>Седан</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Цвет</div> <div class="auto__grow"></div> <div>Белый</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Двигатель</div> <div class="auto__grow"></div> <div>2.5 л / 149 л.с. / Бензин</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Коробка</div> <div class="auto__grow"></div> <div>Автоматическая</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Привод</div> <div class="auto__grow"></div> <div>Передний</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Руль</div> <div class="auto__grow"></div> <div>Левый</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Состояние</div> <div class="auto__grow"></div> <div>Не требует ремонта</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Владельцы</div> <div class="auto__grow"></div> <div>3 или более</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>ПТС</div> <div class="auto__grow"></div> <div>Оригинал</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Владение</div> <div class="auto__grow"></div> <div>1 год и 6 месяцев</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Таможня</div> <div class="auto__grow"></div> <div>Растаможен</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>VIN</div> <div class="auto__grow"></div> <div>Z6FDXXEE*DF*****3</div>
+          </div>
+          <div class="auto__info-specification">
+            <div>Госномер</div> <div class="auto__grow"></div> <div>*163**|163</div>
+          </div>
+        </div>
+        <button class="button auto__button"><svg class="auto__button-icon"><use href="./styles/icons/icons.svg#time" /></svg> КУПИТЬ В КРЕДИТ</button>
+        <button class="button auto__button auto__button_grey"><svg class="auto__button-icon"><use href="./styles/icons/icons.svg#refresh" /></svg> ПРЕДЛОЖИТЬ ОБМЕН</button>
+
+        <div class="auto__question">
+          <svg class="auto__question-icon"><use href="./styles/icons/icons.svg#question"/></svg>
+          <div class="auto__question-text">
+            <div> <span class="auto__question-red">ВОЗНИК ВОПРОС?</span> ПОЗВОНИТЕ-ОТВЕТИМ!</div>
+            <div class="auto__question-text-phone">8 800 70-70-900</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="additional-charact">
+    <div class="title wrapper">ДОПОЛНИТЕЛЬНЫЕ ХАРАКТЕРИСТИКИ</div>
+    <ul class="additional-charact__list wrapper">
+      <li><span>Антиблокировочная система (ABS)</span></li>
+      <li><span>Антипробуксовочная система</span></li>
+      <li><span>Датчик дождя</span></li>
+      <li><span>Датчик света</span></li>
+      <li><span>Ксеноновые фары</span></li>
+      <li><span>Мультимедиа</span></li>
+      <li><span>Навигационная система</span></li>
+      <li><span>Обогрев зеркал</span></li>
+      <li><span>Обогрев руля</span></li>
+      <li><span>Обогрев сидений</span></li>
+      <li><span>Охранная система</span></li>
+      <li><span>Кожанный салон</span></li>
+      <li><span>Система курсовой стабилизации</span></li>
+      <li><span>Кондиционер</span></li>
+      <li><span>Центральный замок</span></li>
+      <li><span>Электрозеркала</span></li>
+      <li><span>Эл. стеклоподъемники 4 шт</span></li>
+      <li><span>Климат контроль</span></li>
+      <li><span>Подогрев лобового стекла</span></li>
+      <li><span>Противотуманные фары</span></li>
+      <li><span>Защита картера</span></li>
+      <li><span>Автозапуск</span></li>
+      <li><span>Подуш. безоп. (кол-во) 4</span></li>
+      <li><span>Дополнительный комплект колёс У хозяина</span></li>
+    </ul>
+  </div>
+
+  <div class="title title wrapper">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</div>
+
+  <ul class="additional-info wrapper">
+    <li>
+      <div class="additional-info__circle">
+        <img src="./images/add.png" alt="" class="additional-info__img">
+      </div>
+      <div class="additional-info__title">БЕЗОПАСНЫЕ СДЕЛКИ</div>
+      <div class="additional-info__descr">Сделка наличным, или безналичным путем</div>
+    </li>
+    <li>
+      <div class="additional-info__circle">
+        <img src="./images/add2.png" alt="" class="additional-info__img">
+      </div>
+      <div class="additional-info__title">ПРОВЕРЕННЫЕ АВТО</div>
+      <div class="additional-info__descr">Все автомобили проверены с достоверной информацией</div>
+    </li>
+    <li>
+      <div class="additional-info__circle">
+        <img src="./images/add3.png" alt="" class="additional-info__img">
+      </div>
+      <div class="additional-info__title">ВЫГОДНЫЙ КРЕДИТ</div>
+      <div class="additional-info__descr">Совершайте покупки в кредит выгодно</div>
+    </li>
+    <li>
+      <div class="additional-info__circle">
+        <img src="./images/add4.png" alt="" class="additional-info__img">
+      </div>
+      <div class="additional-info__title">ВЫГОДНЫЙ ОБМЕН</div>
+      <div class="additional-info__descr">Сделка может стать для Вас еще выгоднее на Ваших условиях</div>
+    </li>
+  </ul>
+
+  <div class="slider-main swiper-container">
+    <div class="swiper-wrapper slider-main__wrapper">
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/ban_1.png" alt="">
+          <div class="wrapper slider-main__wrap">
+            <div class="slider-main__content">
+              <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+              <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+              <button class="slider-main__button button">В КАТАЛОГ >></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/ban_2.png" alt="">
+          <div class="wrapper slider-main__wrap">
+            <div class="slider-main__content">
+              <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+              <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+              <button class="slider-main__button button">В КАТАЛОГ >></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slider-main__item">
+          <img class="slider-main__img" src="/images/ban_3.png" alt="">
+          <div class="wrapper slider-main__wrap">
+            <div class="slider-main__content">
+              <div class="slider-main__title">ОБМЕНЯЙ СВОЙ АВТОМОБИЛЬ</div>
+              <div class="slider-main__subtitle">НА ЛЮБОЙ <br> ПРЕДСТАВЛЕННЫЙ <br> АВТО С ПОБЕГОМ!</div>
+              <button class="slider-main__button button">В КАТАЛОГ >></button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="title title_bold wrapper">ВАС МОГУТ ЗАИНТЕРЕСОВАТЬ</div>
+  <div class="interesting">
+    <div class="wrapper">
+      <div class="interesting__elements">
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+      </div>
+      <div class="interesting__add-more">
+        <span class="interesting__add-more-btn">Показать ещё...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="watched">
+    <div class="title title_bold wrapper">ВЫ НЕДАВНО СМОТРЕЛИ</div>
+    <div class="interesting wrapper">
+      <div class="interesting__elements">
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+        <div class="interesting__elem">
+          <img src="./images/int.png" alt="" class="interesting__img">
+          <div class="interesting__title">
+            <div class="interesting__name">BMW 5 серия</div>
+            <div class="interesting__price">1 365 000 руб.</div>
+          </div>
+          <div class="interesting__specifications">
+            <div class="interesting__specifications-min">
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#calendar"/></svg>
+                2013
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#kilom"/></svg>
+                76 000 км
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#settings"/></svg>
+                автомат
+              </div>
+              <div class="interesting__specifications-min-elem">
+                <svg class="interesting__specifications-min-icon"><use href="./styles/icons/icons.svg#liter"/></svg>
+                2 л
+              </div>
+            </div>
+          </div>
+          <div class="interesting__buttons">
+            <button class="button button_black interesting__button">Подробнее >></button>
+            <button class="button button_grey interesting__button interesting__button_two">ОБМЕН</button>
+            <button class="button button_grey interesting__button">КРЕДИТ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

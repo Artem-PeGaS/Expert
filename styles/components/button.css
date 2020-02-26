@@ -1,0 +1,50 @@
+.button {
+	background-color: var(--red);
+	color: white;
+	text-transform: uppercase;
+	width: 190px;
+	height: 40px;
+	cursor: pointer;
+	transition-duration: var(--animate-duration-micro);
+	transition-timing-function: var(--animate-easing-standard);
+
+	&:hover,
+	&:focus {
+		background-color: var(--red-light);
+	}
+
+	&_black {
+		background-color: black;
+		color: white;
+		text-transform: inherit;
+
+		&:hover,
+		&:focus {
+			background-color: black;
+		}
+	}
+
+	&_revert {
+		border: 1px solid var(--red);
+		color: red;
+		background-color: white;
+
+		&:hover,
+		&:focus {
+			background-color: white;
+			border: 1px solid var(--grey);
+			color: var(--grey);
+		}
+	}
+
+	&_grey {
+		background-color: var(--grey-light);
+		color: black;
+
+		&:hover,
+		&:focus {
+			background-color: var(--red);
+			color: white;
+		}
+	}
+}

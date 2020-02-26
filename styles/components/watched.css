@@ -1,0 +1,6 @@
+.watched {
+	background-color: var(--grey-light);
+	padding-top: 1.75rem;
+	margin-top: 1.75rem;
+	box-shadow: inset 3px 13px 13px -9px var(--grey);
+}

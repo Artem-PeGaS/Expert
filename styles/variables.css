@@ -1,0 +1,66 @@
+:root {
+	--red: #d60c04;
+	--grey: #505050;
+	--grey-light: #ebebeb;
+	--yellow: #ffde00;
+
+	--red-light: color-mod(var(--red) tint(30%));
+	--green-light: color-mod(red alpha(50%)); /* Делает прозрачным */
+	--link-ul-color: color-mod(red tint(50%)); /* Осветляет */
+
+	--fz-0: 0.875rem; /* 14 */
+	--fz-1: 1rem; /* 16 */
+	--fz-2: 1.125rem; /* 18 */
+	--fz-3: 2.22rem;
+
+	--lh-1: 1.25;
+	--lh-2: 1.5;
+	--lh-3: 1.75;
+
+	--max-text-width: 36em;
+
+	/* https://material.io/guidelines/motion/duration-easing.html#duration-easing-common-durations */
+	--animate-duration-timeout: 2500ms;
+	--animate-duration-effect: 500ms;
+	--animate-duration-enter: 250ms;
+	--animate-duration-leave: 200ms;
+	--animate-duration-micro: 100ms;
+
+	/* https://material.io/guidelines/motion/duration-easing.html#duration-easing-natural-easing-curves */
+	--animate-easing-linear: cubic-bezier(0, 0, 1, 1);
+	--animate-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+	--animate-easing-deceleration: cubic-bezier(0, 0, 0.2, 1);
+	--animate-easing-acceleration: cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* https://medium.com/p/88d6a5ba1862 */
+/* @custom-media --only-phone (width < 600px); */
+@custom-media --tablet-portrait-up (width < 600px);
+@custom-media --tablet-landscape-up (width < 900px);
+@custom-media --desktop-up (width < 1200px);
+@custom-media --big-desktop-up (width < 1600px);
+
+@define-mixin ul-solid $color {
+	background-image: linear-gradient(90deg, $color, $color 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 10px 1px;
+}
+
+@define-mixin ul-dotted $color {
+	background-image: linear-gradient(90deg, $color, $color 50%, transparent 50%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 2px 1px;
+}
+
+@define-mixin button-reset {
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}

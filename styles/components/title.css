@@ -1,0 +1,16 @@
+.title {
+	text-transform: uppercase;
+	font-size: 36px;
+	text-align: center;
+	font-family: 'europe';
+	font-weight: normal;
+	line-height: 1.25;
+
+	@media (--tablet-portrait-up) {
+		font-size: 30px;
+	}
+
+	&_bold {
+		font-weight: bold;
+	}
+}

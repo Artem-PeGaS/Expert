@@ -1,0 +1,263 @@
+.header {
+	border-top: 2px solid var(--red);
+
+	&__wrapper {
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 277px;
+		height: 44px;
+
+		@media (--tablet-portrait-up) {
+			width: 180px;
+			object-fit: contain;
+			height: auto;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__descr {
+		color: var(--red);
+
+		@media (--tablet-landscape-up) {
+			display: none;
+		}
+	}
+
+	&__location {
+		color: var(--red);
+		display: flex;
+		align-items: center;
+
+		@media (--tablet-landscape-up) {
+			display: none;
+		}
+	}
+
+	&__location-txt {
+		@mixin ul-solid var(--red);
+	}
+
+	&__location-icon {
+		width: 16px;
+		height: 23px;
+		margin-right: 0.5rem;
+		fill: var(--red);
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		color: var(--grey);
+		align-items: flex-end;
+
+		@media (--tablet-landscape-up) {
+			display: none;
+		}
+	}
+
+	&__hamburger {
+		display: none;
+		height: 35px;
+		width: 35px;
+		fill: var(--grey);
+		z-index: 99;
+		position: relative;
+
+		&_active {
+			fill: var(--red);
+		}
+
+		@media (--tablet-landscape-up) {
+			display: block;
+		}
+	}
+
+	&__address {
+		display: flex;
+		align-items: center;
+		font-size: var(--fz-0);
+	}
+
+	&__address-icon {
+		fill: var(--red);
+		margin-right: 0.5rem;
+		width: 15px;
+		height: 15px;
+	}
+
+	&__phone {
+		display: flex;
+		align-items: center;
+		margin-top: 0.5rem;
+
+		&_mob {
+			display: none;
+
+			@media (--tablet-landscape-up) {
+				display: flex;
+				margin-top: 3rem;
+			}
+		}
+	}
+
+	&__phone-icon {
+		fill: var(--red);
+		margin-right: 0.5rem;
+		height: 20px;
+		width: 20px;
+
+		.header__phone-link_mob & {
+			height: 30px;
+			width: 30px;
+			fill: var(--grey);
+		}
+	}
+
+	&__phone-link {
+		color: var(--grey);
+		font-size: var(--fz-2);
+		@mixin ul-solid transparent;
+
+		transition-duration: var(--animate-duration-micro);
+		transition-timing-function: var(--animate-easing-standard);
+
+		.header__phone_mob & {
+			display: none;
+			color: var(--red);
+
+			@media (--tablet-landscape-up) {
+				display: block;
+			}
+		}
+
+		&_mob {
+			display: none;
+
+			@media (--tablet-landscape-up) {
+				display: block;
+				color: var(--grey);
+				font-size: var(--fz-2);
+			}
+		}
+
+		&:hover,
+		&:focus {
+			@mixin ul-solid var(--grey);
+		}
+	}
+
+	&__soc-net {
+		display: flex;
+		margin-top: 0.5rem;
+
+		&_mob {
+			display: none;
+
+			@media (--tablet-landscape-up) {
+				display: flex;
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	&__soc-net-icon {
+		width: 23px;
+		height: 23px;
+		fill: var(--grey);
+		margin-left: 0.5rem;
+	}
+
+	&__menu {
+		background-color: var(--grey-light);
+
+		@media (--tablet-landscape-up) {
+			position: absolute !important;
+			top: 0;
+			flex-direction: column;
+			width: 100%;
+			background-color: var(--grey-light);
+			z-index: 9;
+			padding-left: 3.5rem !important;
+			padding-top: 2rem;
+			justify-content: start;
+			bottom: 0;
+			height: auto;
+			display: none;
+
+			&_active {
+				display: block;
+			}
+		}
+	}
+
+	&__menu-wrap {
+		display: flex;
+		justify-content: space-between;
+		height: 50px;
+
+		@media (--tablet-landscape-up) {
+			height: auto;
+			flex-direction: column;
+			width: 100%;
+			justify-content: start;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	&__menu-link {
+		text-transform: uppercase;
+		display: flex;
+		color: black;
+		transition-duration: var(--animate-duration-micro);
+		transition-timing-function: var(--animate-easing-standard);
+		justify-content: center;
+		height: 100%;
+		align-items: center;
+		width: 100%;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+
+		.header__menu-item:first-child & {
+			justify-content: flex-start;
+		}
+
+		.header__menu-item:last-child & {
+			justify-content: flex-end;
+
+			@media (--tablet-landscape-up) {
+				justify-content: flex-start;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			background-color: var(--yellow);
+		}
+
+		@media (--tablet-landscape-up) {
+			justify-content: flex-start;
+		}
+	}
+
+	&__menu-item {
+		width: 232px;
+		display: flex;
+		height: 100%;
+		align-items: center;
+
+		@media (--tablet-landscape-up) {
+			width: 100%;
+			height: 50px;
+		}
+	}
+}
